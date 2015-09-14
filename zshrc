@@ -87,4 +87,5 @@ alias vi=vim
 
 export TERMINAL=urxvt
 export XDG_CONFIG_HOME=$HOME/.config
+export EDITOR=vim
 DEFAULT_USER=ddewey

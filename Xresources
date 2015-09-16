@@ -9,7 +9,7 @@ xterm*reverseVideo: on
 
 ! Font
 xterm*faceName: Source Code Pro
-urxvt.font: xft:Source Code Pro
+urxvt.font: xft:Source Code Pro:size=9
 
 ! Buffer
 xterm*saveLines: 2000

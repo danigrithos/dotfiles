@@ -88,4 +88,5 @@ alias vi=vim
 export TERMINAL=urxvt
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
+export PATH=$PATH:$HOME/Development/PhArcanist/arcanist/bin
 DEFAULT_USER=ddewey

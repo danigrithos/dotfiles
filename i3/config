@@ -181,3 +181,6 @@ exec i3-msg 'workspace $tag1'
 
 # Insure that the chromium window opens on workpace 2
 for_window [title="workspace2"] move workspace number $tag2
+
+# Restrict VMware to Virtualization workspace
+assign [class="Vmware"] $tag9

@@ -11,3 +11,4 @@ set relativenumber
 " Highlight anything over a certain number of columns
 set colorcolumn=80
 highlight colorcolumn ctermbg=red ctermfg=white
+set encoding=utf-8

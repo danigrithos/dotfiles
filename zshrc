@@ -63,11 +63,13 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
+if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
-# else
+    echo ""
+else
+    export TERMINAL=urxvt
 #   export EDITOR='mvim'
-# fi
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -85,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
 
-export TERMINAL=urxvt
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PATH=$PATH:$HOME/Development/PhArcanist/arcanist/bin

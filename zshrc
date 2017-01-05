@@ -86,8 +86,17 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=vim
+alias emacs="emacs -nw"
+alias tmux="tmux -2"
 
 export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PATH=$PATH:$HOME/Development/PhArcanist/arcanist/bin
+export PATH=$PATH:$HOME/bin
 DEFAULT_USER=ddewey
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_prompt_command
+fi
+#export PYTHONPATH=/usr/lib/python3.5/site-packages
+#export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config

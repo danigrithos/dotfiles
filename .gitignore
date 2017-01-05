@@ -1,1 +1,9 @@
+*.swp
 config/chromium
+config/VirtualBox
+config/monitors.xml*
+config/gconf
+config/ibus
+config/menus
+vim/.netrwhist
+

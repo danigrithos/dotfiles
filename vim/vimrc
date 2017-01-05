@@ -1,0 +1,13 @@
+syntax enable
+"colorscheme solarized
+set background=dark
+set number
+set relativenumber
+
+set laststatus=2
+set t_Co=256
+
+" Highlight anything over a certain number of columns
+set colorcolumn=80
+highlight colorcolumn ctermbg=red ctermfg=white
+set encoding=utf-8

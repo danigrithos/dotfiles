@@ -329,11 +329,11 @@ label-connected = "%{u#2aa198 +u}%{F#5b}%{F-}%downspeed:7%%{u-}"
 type = internal/date
 interval = 5
 
-date =
+date = " %Y-%m-%d"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+time-alt = %r
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}

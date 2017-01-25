@@ -215,3 +215,6 @@ exec --no-startup-id i3-msg 'workspace $tag1; exec chromium &'
 exec --no-startup-id i3-msg 'workspace $tag2; exec termite'
 exec --no-startup-id i3-msg 'workspace $tag9; exec termite -e htop &'
 exec --no-startup-id i3-msg 'workspace $tag4; exec termite -e weechat &; workspace $tag2'
+
+# Make VirtualBox always floating window
+for_window [class="VirtualBox"] floating enable

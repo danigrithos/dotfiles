@@ -93,6 +93,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=vim
 export PATH=$PATH:$HOME/Development/PhArcanist/arcanist/bin
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.gem/ruby/2.4.0/bin
 DEFAULT_USER=ddewey
 if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh

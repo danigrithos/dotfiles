@@ -11,7 +11,7 @@
 background = #141B36
 background-alt = #444
 foreground = #dfdfdf
-foreground-alt = #55
+foreground-alt = #5555
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -50,13 +50,13 @@ module-margin-left = 1
 module-margin-right = 2
 
 ;font-0 = fixed:pixelsize=20;0
-font-0 = Source Code Pro:size=10;0
-font-1 = unifont:size=12:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=20;0
-font-3 = FontAwesome:size=12;0
+font-0 = Source Code Pro:size=15;0
+font-1 = unifont:size=18:heavy:fontformat=truetype;-2
+font-2 = siji:pixelsize=25;0
+font-3 = FontAwesome:size=15;0
 
 modules-left = i3 xwindow
-modules-center = 
+modules-center =
 ;modules-right = backlight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = backlight volume battery wlan date powermenu
 
@@ -102,14 +102,15 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Source Code Pro:size=10;0
-font-1 = unifont:size=12:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=20;0
-font-3 = FontAwesome:pixelsize=30;0
+font-0 = Source Code Pro:size=18;0
+font-1 = unifont:size=18:heavy:fontformat=truetype;-2
+font-2 = siji:pixelsize=25;0
+font-3 = FontAwesome:size=20;0
 
-modules-left = 
+
+modules-left = filesystem-slash filesystem-home
 modules-center = networkspeedup networkspeeddown
-modules-right = temperature filesystem-slash filesystem-home cpu memory
+modules-right = temperature cpu memory
 
 tray-position = right
 tray-padding = 2
@@ -137,14 +138,14 @@ type = internal/fs
 interval = 25
 
 mount-0 = /mnt/extra
-label-mounted = "%{F#5b5b5b}%{F-} %percentage_used%"
+label-mounted = "%{F#5b5b5b}%{F-} %percentage_used%%"
 
 [module/filesystem-slash]
 type = internal/fs
 interval = 25
 
 mount-0 = /
-label-mounted = "%{F#5b5b5b}%{F-} %percentage_used%"
+label-mounted = "%{F#5b5b5b}%{F-} %percentage_used%%"
 
 [module/bspwm]
 type = internal/bspwm

@@ -101,3 +101,10 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 #export PYTHONPATH=/usr/lib/python3.5/site-packages
 #export POWERLINE_CONFIG_COMMAND=/usr/bin/powerline-config
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# RVM bash completion
+[[ -r "$HOME/.rvm/scripts/completion" ]] && source "$HOME/.rvm/scripts/completion"

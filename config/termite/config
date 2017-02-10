@@ -1,5 +1,6 @@
 [options]
-font = Source Code Pro 10
+#font = Source Code Pro 10
+font = Overpass Mono 10
 
 # Solarized dark color scheme
 

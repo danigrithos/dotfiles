@@ -1,1 +1,0 @@
-{"*":{"core":{"disabledPackages":["deprecation-cop"],"telemetryConsent":"no","themes":["seti-ui","monokai-seti"]},"editor":{"fontFamily":"Overpass Mono","tabLength":4},"exception-reporting":{"userId":"240aba1c-d430-00bb-e009-b1053aab316d"},"minimap":{"displayMinimapOnLeft":true,"plugins":{"highlight-selected":true,"highlight-selectedDecorationsZIndex":0}},"project-manager":{}}}

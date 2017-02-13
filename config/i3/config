@@ -202,8 +202,10 @@ exec --no-startup-id feh -D 60 --randomize --bg-fill ~/.wallpaper/wallpaper07.jp
 # Insure that the chromium window opens on workpace 2
 for_window [title="workspace2"] move workspace number $tag2
 
-# Restrict VMware to Virtualization workspace
-assign [class="Vmware"] $tag9
+# Assign new windows to workspaces
+assign [class="Chromium"] $tag1
+assign [class="Atom"] $tag3
+assign [class="Vmware"] $tag8
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Starting compton
@@ -226,10 +228,10 @@ set $tag7 "7:"
 set $tag8 "8:"
 set $tag9 "9:"
 
-# Startup apps
-exec --no-startup-id i3-msg 'workspace $tag1; exec chromium &'
+# Startup apps, only specifying workspace for terminal apps as the class cannot be determined beyond the terminal name
+exec --no-startup-id i3-msg 'exec chromium'
 exec --no-startup-id i3-msg 'workspace $tag2; exec termite'
-exec --no-startup-id i3-msg 'workspace $tag3; exec atom'
+exec --no-startup-id i3-msg 'exec atom'
 exec --no-startup-id i3-msg 'workspace $tag4; exec termite -e weechat &'
 exec --no-startup-id i3-msg 'workspace $tag9; exec termite -e htop &; workspace $tag2'
 

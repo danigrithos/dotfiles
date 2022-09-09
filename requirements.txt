@@ -22,7 +22,7 @@ keystoneauth1==2.18.0
 Mako==1.0.6
 MarkupSafe==0.23
 mccabe==0.5.3
-mistune==0.7.3
+mistune==0.8.1
 msgpack-python==0.4.8
 nbformat==4.2.0
 netaddr==0.7.19
